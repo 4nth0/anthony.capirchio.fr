@@ -26,6 +26,17 @@ $palette: (
 @import 'imports/structure';
 @import 'imports/header';
 @import 'imports/posts-pages';
+@import 'imports/photographies';
 @import 'imports/footer';
 @import 'imports/palettes';
 @import 'imports/banner';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+
+.post-thumbnail {
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

@@ -332,6 +332,12 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+  photography:
+    type: page
+    urlPath: '/photographies/{slug}'
+    label: Photographie
+    layout: photography
+    folder: photographies
   post:
     type: page
     urlPath: '/posts/{slug}'

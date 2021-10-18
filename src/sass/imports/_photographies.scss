@@ -1,0 +1,25 @@
+/**
+ * Photographies
+ */
+.photography-feed {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+
+    // .post-thumbnail {
+    //     height: 150px;
+    // }
+
+    .post {
+        flex:1;
+        margin:10px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

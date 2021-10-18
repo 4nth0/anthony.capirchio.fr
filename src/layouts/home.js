@@ -18,6 +18,10 @@ export default class Home extends React.Component {
         const formattedDate = moment(date).strftime('%B %d, %Y');
         const postUrl = getPageUrl(post, { withPrefix: true });
 
+        const imageBlocStyle = {
+            backgroundImage: `url(${thumbImage})`
+        }
+
         return (
             <article key={index} className="post">
                 <header className="post-header">
@@ -29,8 +33,8 @@ export default class Home extends React.Component {
                     </div>
                 </header>
                 {thumbImage && (
-                    <Link className="post-thumbnail" href={postUrl}>
-                        <img className="thumbnail" src={withPrefix(thumbImage)} alt={thumbImageAlt} />
+                    <Link className="post-thumbnail" style={imageBlocStyle} href={postUrl}>
+                        {/* <img className="thumbnail" src={withPrefix(thumbImage)} alt={thumbImageAlt} /> */}
                     </Link>
                 )}
                 {excerpt && (
@@ -56,6 +60,7 @@ export default class Home extends React.Component {
         const hasMoreLink = _.get(page, 'has_more_link');
         const moreLinkText = _.get(page, 'more_link_text');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
+        const photographies = _.orderBy(_.get(this.props, 'photographies', []), 'date', 'desc');
 
         return (
             <Layout page={page} config={config}>
@@ -64,6 +69,9 @@ export default class Home extends React.Component {
                     <main id="main" className="site-main inner">
                         <div className="post-feed">
                             {_.map(posts, (post, index) => this.renderPost(post, index, hasMoreLink, moreLinkText))}
+                        </div>
+                        <div className="photography-feed">
+                            {_.map(photographies, (photography, index) => this.renderPost(photography, index, hasMoreLink, moreLinkText))}
                         </div>
                     </main>
                     <Footer config={config} />
