@@ -4,6 +4,7 @@ excerpt: >-
   Si la réalisation d'un MVP ( Minimum viable product ) est l'étape la plus importante pour lancer un concept, le passage à une version réellement stable est certainement la plus critique.
 date: '2022-03-02T23:46:37.121Z'
 type: post
+status: draft
 thumb_img_path: images/pages/posts/je-suis-un-dev-qui-blog-sur-wix-cest-grave-docteur/preview.webp
 content_img_path: images/pages/posts/je-suis-un-dev-qui-blog-sur-wix-cest-grave-docteur/preview.webp
 tags: ['mvp', 'projet']

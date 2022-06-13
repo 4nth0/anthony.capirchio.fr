@@ -4,6 +4,7 @@ excerpt: >-
   Souvent nous considérons des choses comme évidentes, tellement évidentes qu'il ne nous semble pas nécessaire de se poser la question de comment ça fonctionne
 date: '2022-04-03'
 type: post
+status: draft
 thumb_img_path: images/pages/posts/du-mvp-a-lapplication-stable/preview.jpeg
 content_img_path: images/pages/posts/du-mvp-a-lapplication-stable/preview.jpeg
 tags: ['mvp', 'projet']

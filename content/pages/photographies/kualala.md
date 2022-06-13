@@ -21,7 +21,7 @@ images:
 ---
 J’espère pouvoir me souvenir toute ma vie de mes deux premiers voyages en Malaisie, ils ont été incroyablement impactant sur ma manière de concevoir le voyage et la perception du monde en général.
 
-Pour faire court, la première fois que nous y sommes allés avec Farah c’était une nouvelle étape dans notre parcours de Digital Nomades (aujourd’hui en pause loooooongue), la première fois que nous partions aussi loin, aussi longtemps. Ce n’est pas loin de 3 mois que nous avons passés dans la région et très sincèrement, nous nous sommes vraiment régalés dans cette aventure. Nous avons tenté de profiter au maximum de l’environnement.
+Pour faire court, la première fois que nous y sommes allés avec Farah c’était une nouvelle étape dans notre parcours de Digital Nomades (aujourd’hui en pause loooooongue), la première fois que nous partions aussi loin, aussi longtemps. Ce n’est pas loin de 6 mois que nous avons passés dans la région et très sincèrement, nous nous sommes vraiment régalés dans cette aventure. Nous avons tenté de profiter au maximum de l’environnement.
 
 En rentrant nous avions bien des choses à raconter, à partager.
 
