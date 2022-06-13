@@ -4,7 +4,7 @@
     "palette": "yellow",
     "header": {
         "title": "Anthony Capirchio",
-        "tagline": "Problem Solver",
+        "tagline": "<b>Problem Solver</b> (et accessoirement Tech Lead / Archi)",
         "logo_img_alt": "Anthony Capirchio",
         "background_img": "images/header-bg.jpg",
         "has_nav": true,
@@ -34,6 +34,13 @@
                 "url": "https://github.com/4nth0",
                 "style": "icon",
                 "icon_class": "github",
+                "new_window": true
+            },
+            {
+                "label": "Twitter",
+                "url": "https://twitter.com/a_capirchio",
+                "style": "icon",
+                "icon_class": "twitter",
                 "new_window": true
             },
             {

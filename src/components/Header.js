@@ -99,7 +99,7 @@ export default class Header extends React.Component {
                                 {logo && <p className="site-logo"><Link href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} /></Link></p>}
                                 {pageLayout === 'home' ? <h1 className="site-title"><Link href={withPrefix('/')}>{title}</Link></h1>
                                     : <p className="site-title"><Link href={withPrefix('/')}>{title}</Link></p>}
-                                {tagline && <p className="site-description">{tagline}</p>}
+                                {tagline && <p className="site-description" dangerouslySetInnerHTML={{__html: tagline}}></p>}
                             </div>
                             {((hasNav && !_.isEmpty(navLinks)) || (hasSocial && !_.isEmpty(socialLinks))) && (
                                 <React.Fragment>

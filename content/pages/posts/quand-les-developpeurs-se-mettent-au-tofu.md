@@ -2,6 +2,7 @@
 title: Quand les développeurs se mettent au tofu
 date: '2020-02-07T23:46:37.121Z'
 layout: post
+status: draft
 thumb_img_path: images/pages/posts/quand-les-developpeurs-se-mettent-au-tofu/preview.jpg
 content_img_path: images/pages/posts/quand-les-developpeurs-se-mettent-au-tofu/preview.jpg
 tags: ['go', 'framework', 'apprentissage']
@@ -15,7 +16,7 @@ Ce n’est pas absurde, c’est nécessaire. Nous, humains, avons tendance à vo
 
 ## Dans le développement, c’est la même.
 
-Quand un développeur Java va commencer à faire du Javascript, il va avoir tendance à appliquer les design patterns qu’il utilise couramment en Java, c’est classique.
+Quand un développeur Java va commencer à faire du Javascript, il va avoir tendance à appliquer les principes qu’il utilise couramment en Java, c’est classique.
 C’est certes un réflexe, mais ça pose plusieurs problèmes: 
 * Vouloir appliquer des paradigmes provenant d’un autre langage a tendance à nous forcer à tordre le langage que nous utilisons maintenant 
 * Vouloir appliquer les paradigmes d’un autre langage à celui que nous utilisons révèle souvent une absence de volonté d’apprendre les paradigmes du nouveau
@@ -26,8 +27,7 @@ Ainsi, si une grande partie des gens qui se mettent à Go viennent du Java et qu
 
 De même, en cherchant à appliquer les paradigmes d’un autre langage avant-même de chercher à comprendre ceux du langage que nous commençons à utiliser, nous nous retrouvons forcés de faire des contorsion pour que ça colle.
 
-Ce billet n’est au final pas sur Go mais sur le fait de pratiquer un nouveau langage.  Être polyglotte peut apporter une grande richesse dans son quotidien de développeur.
+Ce billet n’est au final pas sur Go mais sur le fait de pratiquer un nouveau langage. Être polyglotte peut apporter une grande richesse dans son quotidien de développeur, encore faut-il prendre le temps et la peine de s'intéresser aux principes fondamentaux du langage ainsi que ses idiomes.
 
 Ça permet d’avoir plusieurs points de vue sur un même problème, de voir plusieurs implémentations d’un même principe.
 
-Apprendre un nouveau langage doit être source d’enrichissement et ce n’est pas en essayant ne pensant qu’à travers un langage que cet enrichissement se produira.

@@ -5,37 +5,41 @@ import moment from 'moment-strftime';
 import { Layout } from '../components/index';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Icon from '../components/Icon';
 import { getPageUrl, Link, withPrefix } from '../utils';
 
 export default class Home extends React.Component {
     renderPost(post, index, hasMoreLink, moreLinkText) {
         const title = _.get(post, 'title');
         const thumbImage = _.get(post, 'thumb_img_path');
-        const thumbImageAlt = _.get(post, 'thumb_img_alt', '');
         const excerpt = _.get(post, 'excerpt');
         const date = _.get(post, 'date');
         const dateTimeAttr = moment(date).strftime('%Y-%m-%d %H:%M');
         const formattedDate = moment(date).strftime('%B %d, %Y');
-        const postUrl = getPageUrl(post, { withPrefix: true });
+        let postUrl = getPageUrl(post, { withPrefix: true });
+        const isExtarnalPost = "object" == typeof post.origin && !!post.origin.platform
+        
+        if(post.status && post.status != "live") {
+            return null
+        }
 
-        const imageBlocStyle = {
-            backgroundImage: `url(${thumbImage})`
+        if('object' == typeof post.origin && post.origin.path) {
+            postUrl = post.origin.path;
         }
 
         return (
             <article key={index} className="post">
                 <header className="post-header">
                     <h2 className="post-title">
+                        {isExtarnalPost ? <Icon className="external-icom" icon="link" /> : ""}
                         <Link href={postUrl}>{title}</Link>
                     </h2>
                     <div className="post-meta">
-                        Published on <time className="published" dateTime={dateTimeAttr}>{formattedDate}</time>
+                        Publié le <time className="published" dateTime={dateTimeAttr}>{formattedDate}</time>
                     </div>
                 </header>
                 {thumbImage && (
-                    <Link className="post-thumbnail" style={imageBlocStyle} href={postUrl}>
-                        {/* <img className="thumbnail" src={withPrefix(thumbImage)} alt={thumbImageAlt} /> */}
-                    </Link>
+                    <Link className="post-thumbnail" style={{ backgroundImage: `url(${thumbImage})` }} href={postUrl}></Link>
                 )}
                 {excerpt && (
                     <div className="post-content">
