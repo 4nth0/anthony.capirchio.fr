@@ -346,6 +346,12 @@ models:
     label: Photographie
     layout: photography
     folder: photographies
+  link:
+    type: page
+    urlPath: '/links/{slug}'
+    label: Link
+    layout: link
+    folder: links
   post:
     type: page
     urlPath: '/posts/{slug}'

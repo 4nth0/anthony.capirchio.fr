@@ -1,0 +1,40 @@
+/**
+ * Liens
+ */
+.link-tree {
+    padding:40px;
+    padding-bottom: 100px;
+
+    h1, h2 {
+        color:white;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 19px;
+        font-style: italic;
+        margin-top:0;
+        font-weight: 100;
+    }
+
+    &.twitter {
+        background-color: rgb(29, 155, 240);
+    }
+
+    .link-wrapper {
+        padding: 10px;
+        border: 1px solid black;
+        margin: 30px auto;
+        box-shadow: 3px 3px 1px black;
+        background: white;
+        font-size: 22px;
+        max-width: 600px;
+
+        .icon {
+            position: relative;
+            top: 4px;
+            margin-right: 15px;
+        }
+    }
+}
