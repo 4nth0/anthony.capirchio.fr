@@ -118,6 +118,14 @@ models:
     label: Site Configuration
     fields:
       - type: string
+        name: site_address
+        label: Site Address
+        description: Address of the site
+      - type: string
+        name: twitter_user
+        label: Twitter User
+        description: Twitter User
+      - type: string
         name: title
         label: Title
         description: Site title

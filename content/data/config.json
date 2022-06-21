@@ -2,6 +2,8 @@
     "title": "Anthony Capirchio",
     "path_prefix": "/",
     "palette": "yellow",
+    "site_address": "https://anthony.capirchio.fr",
+    "twitter_user": "a_capirchio",
     "header": {
         "title": "Anthony Capirchio",
         "tagline": "<b>Problem Solver</b> (et accessoirement Tech Lead / Archi)",

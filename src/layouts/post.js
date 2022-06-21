@@ -3,6 +3,7 @@ import _ from 'lodash';
 import moment from 'moment-strftime';
 
 import { Layout } from '../components/index';
+import getPageUrl from '../utils/getPageUrl'
 import Header from '../components/Header';
 import HeaderAlt from '../components/HeaderAlt';
 import Footer from '../components/Footer';
@@ -23,10 +24,20 @@ export default class Post extends React.Component {
         const formattedDate = moment(date).strftime('%B %d, %Y');
         const markdownContent = _.get(page, 'markdown_content');
 
+        config.og = [
+            ["og:url",          `${config.site_address}${page.__metadata.urlPath}`],
+            ["og:title",        title],
+            ["og:description",  page.excerpt],
+            ["og:image",        `${config.site_address}/${headerImage}`],
+
+            ["twitter:card",    page.excerpt],
+            ["twitter:site",    config.site_address],
+            ["twitter:creator", config.twitter_user]
+        ]
+
         return (
             <Layout page={page} config={config}>
-                {hideHeader ? <HeaderAlt />
-                    : <Header config={config} page={page} image={headerImage} />}
+                {hideHeader ? <HeaderAlt /> : <Header config={config} page={page} image={headerImage} />}
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
                         <article className="post post-full">
