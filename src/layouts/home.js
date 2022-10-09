@@ -9,7 +9,7 @@ import Icon from '../components/Icon';
 import { getPageUrl, Link, withPrefix } from '../utils';
 
 export default class Home extends React.Component {
-    renderPost(post, index, hasMoreLink, moreLinkText) {
+    renderPost(post, index) {
         const title = _.get(post, 'title');
         const thumbImage = _.get(post, 'thumb_img_path');
         const excerpt = _.get(post, 'excerpt');
@@ -46,23 +46,35 @@ export default class Home extends React.Component {
                         <p>{excerpt}</p>
                     </div>
                 )}
-                {hasMoreLink && moreLinkText && (
-                    <p className="read-more">
-                        <Link className="read-more-link" href={postUrl}>{moreLinkText} <span className="icon-arrow-right" aria-hidden="true" /></Link>
-                    </p>
-                )}
+                <p className="read-more">
+                    <Link className="read-more-link" href={postUrl}>{"Continuer la lecture"} <span className="icon-arrow-right" aria-hidden="true" /></Link>
+                </p>
             </article>
         );
     }
 
+    renderPostsFreed(posts) {
+        return <div className="post-feed">
+            {posts.map((post, index) => {
+                return this.renderPost(post, index);
+            })}
+        </div>
+    }
+    
+    renderPhotograpiesFreed(photographies) {
+        return <div className="photography-feed">
+            {photographies.map((photography, index) => {
+                return this.renderPost(photography, index)
+            })}
+        </div>
+    }
+
     render() {
-        const data = _.get(this.props, 'data');
-        const config = _.get(data, 'config');
-        const header = _.get(config, 'header');
-        const headerImage = _.get(header, 'background_img');
-        const page = _.get(this.props, 'page');
-        const hasMoreLink = _.get(page, 'has_more_link');
-        const moreLinkText = _.get(page, 'more_link_text');
+        const data = this.props.data;
+        const config = data.config;
+        const header = config.header;
+        const headerImage = header.background_img;
+        const page = this.props.page;
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
         const photographies = _.orderBy(_.get(this.props, 'photographies', []), 'date', 'desc');
 
@@ -71,12 +83,8 @@ export default class Home extends React.Component {
                 <Header config={config} page={page} image={headerImage} />
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
-                        <div className="post-feed">
-                            {_.map(posts, (post, index) => this.renderPost(post, index, hasMoreLink, moreLinkText))}
-                        </div>
-                        <div className="photography-feed">
-                            {_.map(photographies, (photography, index) => this.renderPost(photography, index, hasMoreLink, moreLinkText))}
-                        </div>
+                        {this.renderPostsFreed(posts)}
+                        {this.renderPhotograpiesFreed(photographies)}
                     </main>
                     <Footer config={config} />
                 </div>
