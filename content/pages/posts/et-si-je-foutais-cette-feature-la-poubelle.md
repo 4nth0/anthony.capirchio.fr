@@ -30,7 +30,7 @@ La question qui se pose ici c’est : est-ce que le jeu en vaut la chandelle ?
 
 Plus exactement, est-ce que cette nouvelle fonctionnalité a un intérêt fondé autre que simplement venir nourrir mon besoin de résoudre des problèmes ? 
 
-C’est une vraie question. Encore aujourd’hui j’ai stoppé un dev en plein milieu simplement parce que j’ai compris qu’il avait des conséquences non négligeables sur mon projet alors que sa seule raison d’être était un « ça pourrait être vachement utile cette fonctionnalité ». 
+C’est une vraie question. Encore aujourd’hui j’ai stoppé un dev en plein milieu simplement parce que j’ai réalisé qu’il avait des conséquences non négligeables sur mon projet alors que sa seule raison d’être était un « ça pourrait être vachement utile cette fonctionnalité ». 
 
 À vrai dire, dès que cette idée fait surface, il y a potentiellement une embrouille à venir. 
 
@@ -41,7 +41,7 @@ Comme assez souvent, pour se remettre sur les rails, il faut retourner à une ce
 
 ## YAGNI
 
-> *« You ain’t gonna need it »*
+> «*You ain’t gonna need it »*
 
 Pourquoi ajouter cette fonctionnalité alors que tu n’en auras pas besoin ?
 
@@ -53,7 +53,7 @@ L’idée est donc de se poser une question simple : mon projet a-t-il un besoin
 
 L’idée d’un besoin « vital » est centrale ici. Il est vaguement question de se demander si le projet peut simplement exister sans la fonctionnalité en question.
 
-Il peut vivre sans ? Alors cette fonction n’est absolument pas nécessaire, elle peut être mise à l’écart. 
+Est-ce que le projet peut vivre sans cette feature ? Alors cette fonctionnalité  n’est absolument pas nécessaire, elle peut être mise à l’écart. 
 
 ## Philosophie UNIX
 
@@ -61,11 +61,11 @@ Il peut vivre sans ? Alors cette fonction n’est absolument pas nécessaire, el
 
 C’est probablement un des principes les plus importants de la philosophie UNIX. 
 
-C’est l’idée qu’un programme doit se limiter à un domaine bien précis et s’y limiter. 
+C’est l’idée qu’un programme doit se limiter à un domaine bien précis et ne pas déborder sur un autre. 
 
-Par exemple, le programme `ls` se contente de lister le contenu d’un répertoire. Il possède pas mal d’options, mais se contente de rester dans son domaine : listage du contenu d’un répertoire. 
+Par exemple, le programme `ls` se contente de lister le contenu d’un répertoire. Il possède pas mal d’options, mais se contente de rester dans son domaine : lister le contenu d’un répertoire. 
 
-Il existe bien évidemment des programmes plus complexes comme `ssh` mais concrètement, il se limite à établir une connexion SSH. Il est possible de faire de la redirection de port, d’exécuter une commande à distance, mais il reste dans son domaine : l’établissement d’une connexion SSH. 
+Il existe bien évidemment des programmes plus complexes comme `ssh` mais concrètement, il se limite à établir une connexion SSH. Il est possible de faire de la redirection de port, d’exécuter une commande à distance, mais il reste dans son domaine : établir une connexion SSH. 
 
 Vous voulez copier un fichier via SSH ?
 
