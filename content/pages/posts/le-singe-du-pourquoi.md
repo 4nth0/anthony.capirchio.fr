@@ -4,8 +4,8 @@ excerpt: >-
   Lors de la présentation de certains cas de test, j’ai été étonné par l’absence de définition de l’intérêt des tests effectués. Dans la majorité des cas, les étapes du cas de tests sont suffisamment évidentes pour ne pas avoir besoin d’ajouter du contexte supplémentaire.
 date: '2023-07-25'
 type: post
-thumb_img_path: images/pages/posts/le-singe-du-pourquoi/illustration.jpeg
-content_img_path: images/pages/posts/le-singe-du-pourquoi/illustration.jpeg
+thumb_img_path: images/pages/posts/le-singe-du-pourquoi/illustration.jpg
+content_img_path: images/pages/posts/le-singe-du-pourquoi/illustration.jpg
 tags: ['projet']
 layout: post
 ---
