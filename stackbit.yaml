@@ -340,6 +340,12 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+  til:
+    type: page
+    urlPath: '/tils/{slug}'
+    label: Today I Learned
+    layout: til
+    folder: tils
   photography:
     type: page
     urlPath: '/photographies/{slug}'

@@ -1,0 +1,27 @@
+.tils-feed {
+    .til {
+        border-bottom: 1px dashed _palette(border);
+        padding-bottom: 0.83333em;
+
+        &:last-child {
+            border: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .til-header {
+        margin-bottom: 1.66667em;
+    }
+
+    .til-title {
+        font-size: 20px;
+    }
+}

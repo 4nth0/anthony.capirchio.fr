@@ -53,15 +53,37 @@ export default class Home extends React.Component {
         );
     }
 
-    renderPostsFreed(posts) {
+    renderPostsFeed(posts) {
         return <div className="post-feed">
             {posts.map((post, index) => {
                 return this.renderPost(post, index);
             })}
         </div>
     }
+
+    renderTILSFeed(tils) {
+        return <div className="tils-feed">
+            <h2>Aujourd'hui j'ai appris que ...</h2>
+            <ul>
+                {tils.map((til, index) => {
+                    const title = _.get(til, 'title');
+                    let postUrl = getPageUrl(til, { withPrefix: true });
+                    
+                    if(til.status && til.status != "live") {
+                        return null
+                    }
+            
+                    return (
+                        <li key={index}>
+                            <Link href={postUrl}>{title}</Link>
+                        </li>
+                    );
+                })}
+            </ul>
+        </div>
+    }
     
-    renderPhotograpiesFreed(photographies) {
+    renderPhotograpiesFeed(photographies) {
         return <div className="photography-feed">
             {photographies.map((photography, index) => {
                 return this.renderPost(photography, index)
@@ -76,6 +98,7 @@ export default class Home extends React.Component {
         const headerImage = header.background_img;
         const page = this.props.page;
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
+        const tils = _.orderBy(_.get(this.props, 'tils', []), 'date', 'desc');
         const photographies = _.orderBy(_.get(this.props, 'photographies', []), 'date', 'desc');
 
         return (
@@ -83,8 +106,9 @@ export default class Home extends React.Component {
                 <Header config={config} page={page} image={headerImage} />
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
-                        {this.renderPostsFreed(posts)}
-                        {this.renderPhotograpiesFreed(photographies)}
+                        {this.renderPostsFeed(posts)}
+                        {this.renderTILSFeed(tils)}
+                        {this.renderPhotograpiesFeed(photographies)}
                     </main>
                     <Footer config={config} />
                 </div>
