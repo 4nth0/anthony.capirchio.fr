@@ -4,8 +4,8 @@ excerpt: >-
   Découverte du rap en 1997 avec IAM et Assassin. Influences variées grâce à ma famille et la radio. Une passion qui dure depuis près de 30 ans, marquée par des groupes iconiques et des souvenirs indélébiles.
 date: '2024-07-19'
 type: post
-thumb_img_path: images/pages/posts/le-singe-du-pourquoi/illustration.jpg
-content_img_path: images/pages/posts/le-singe-du-pourquoi/illustration.jpg
+thumb_img_path: images/pages/posts/amour-du-rap/illustration.jpg
+content_img_path: images/pages/posts/amour-du-rap/illustration.jpg
 tags: ['perso']
 layout: post
 ---
