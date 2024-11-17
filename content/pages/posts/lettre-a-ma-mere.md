@@ -8,6 +8,7 @@ thumb_img_path: images/pages/posts/lettre-a-ma-mere/illustration.jpeg
 content_img_path: images/pages/posts/lettre-a-ma-mere/illustration.jpeg
 tags: ['perso']
 layout: post
+status: draft
 ---
 
 Et j’ai bien conscience que ça peut sembler insignifiant, mais pour moi, c’est une étape capitale.
