@@ -2,7 +2,7 @@
 title: Je viens d’écrire une lettre à ma mère depuis Londres 
 excerpt: >-
   Écrire une carte postale peut sembler banal, mais pour moi, c’est l’aboutissement d’un long chemin. Parti d’un décrochage scolaire, c’est un commentaire anodin qui a déclenché ma soif d’apprendre. Des années de travail m’ont mené d’autodidacte à développeur, et aujourd’hui, écrire à ma mère, c’est plus qu’un geste : c’est la preuve que j’ai transformé mes faiblesses en forces.
-date: '2024-11-11'
+date: '2029-11-11'
 type: post
 thumb_img_path: images/pages/posts/lettre-a-ma-mere/illustration.jpeg
 content_img_path: images/pages/posts/lettre-a-ma-mere/illustration.jpeg
