@@ -4,8 +4,8 @@ excerpt: >-
   Cet article explore la nécessité de cultiver l’empathie dans le métier de la tech, en soulignant l’importance de comprendre l’autre pour mieux communiquer, rédiger et collaborer, que ce soit avec des humains ou des machines.
 date: '2024-12-05'
 type: post
-thumb_img_path: images/pages/posts/choisir-son-side-project/illustration.jpeg
-content_img_path: images/pages/posts/choisir-son-side-project/illustration.jpeg
+thumb_img_path: images/pages/posts/empathie/illustration.jpeg
+content_img_path: images/pages/posts/empathie/illustration.jpeg
 tags: ['mvp', 'projet']
 layout: post
 ---
